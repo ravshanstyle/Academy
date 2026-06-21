@@ -147,7 +147,7 @@ function NavBar({ page, setPage, menuOpen, setMenuOpen }) {
     <header className="sticky top-0 z-20" style={{ background: "rgba(7,10,18,0.85)", backdropFilter: "blur(8px)", borderBottom: "1px solid rgba(0,229,255,0.15)" }}>
       <div className="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
         <button onClick={() => setPage("home")} className="flex items-center gap-2">
-          <div className="ja-display ja-glow-magenta text-xl font-bold" style={{ color: "#ff2bd6" }}>JA</div>
+          <div className="ja-display ja-glow-magenta text-xl font-bold" style={{ color: "#ff2bd6" }}>SH</div>
           <span className="ja-display text-lg font-semibold tracking-wide">Shohsanam Namozova Academy</span>
         </button>
         <nav className="hidden md:flex gap-7 ja-display text-sm tracking-wide">
