@@ -91,7 +91,7 @@ const COURSES = [
 ];
 
 const TEACHERS = [
-  { name: "Jafar Toshmatov", role: "Asoschi · Ingliz tili", info: "8 yil tajriba · CELTA sertifikati", initials: "JT", accent: "cyan" },
+  { name: "Shohsanam Namozova", role: "Asoschi · Ingliz tili", info: "8 yil tajriba · CELTA sertifikati", initials: "SN", accent: "cyan" },
   { name: "Madina Yusupova", role: "Rus tili o'qituvchisi", info: "6 yil tajriba · Filologiya magistri", initials: "MY", accent: "magenta" },
   { name: "Aziz Karimov", role: "IELTS instruktori", info: "IELTS 7.5 band · 5 yil tajriba", initials: "AK", accent: "cyan" },
   { name: "Nilufar Rashidova", role: "Ingliz tili (Boshlang'ich)", info: "4 yil tajriba · Bolalar guruhlari", initials: "NR", accent: "magenta" },
@@ -110,7 +110,7 @@ const BLOG = [
 ];
 
 function NeonSign() {
-  const words = ["JAFAR'S ACADEMY", "ДЖАФАР АКАДЕМИЯ", "JAFAR AKADEMIYASI"];
+  const words = ["SHOHSANAM NAMOZOVA ACADEMY", "ШОХСАНАМ НАМОЗОВА АКАДЕМИЯ", "SHOHSANAM NAMOZOVA AKADEMIYASI"];
   const [idx, setIdx] = useState(0);
   useEffect(() => {
     const t = setInterval(() => setIdx((i) => (i + 1) % words.length), 2800);
@@ -148,7 +148,7 @@ function NavBar({ page, setPage, menuOpen, setMenuOpen }) {
       <div className="max-w-6xl mx-auto px-5 py-4 flex items-center justify-between">
         <button onClick={() => setPage("home")} className="flex items-center gap-2">
           <div className="ja-display ja-glow-magenta text-xl font-bold" style={{ color: "#ff2bd6" }}>JA</div>
-          <span className="ja-display text-lg font-semibold tracking-wide">Jafar's Academy</span>
+          <span className="ja-display text-lg font-semibold tracking-wide">Shohsanam Namozova Academy</span>
         </button>
         <nav className="hidden md:flex gap-7 ja-display text-sm tracking-wide">
           {links.map((l) => (
@@ -421,7 +421,7 @@ function Footer() {
     <footer className="border-t mt-10" style={{ borderColor: "rgba(0,229,255,0.12)" }}>
       <Section className="py-10 flex flex-col sm:flex-row justify-between gap-4 text-sm">
         <div>
-          <div className="ja-display font-semibold">Jafar's Academy</div>
+          <div className="ja-display font-semibold">Shohsanam Namozova Academy</div>
           <div style={{ color: "#8993b0" }} className="ja-mono text-xs mt-1">Toshkent, Chilonzor tumani</div>
         </div>
         <div className="ja-mono text-xs" style={{ color: "#8993b0" }}>
